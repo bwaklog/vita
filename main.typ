@@ -16,10 +16,10 @@
 /// Functions
 
 #let header_url(url, icon, body) = {
-  link(url)[#body]
-  // link(url)[
-  //   #box(image(icon), height: 10pt, baseline: 2pt) #body
-  // ] 
+  // link(url)[#body]
+  link(url)[
+    #box(image(icon), height: 10pt, baseline: 2pt) #body
+  ] 
 }
 
 #let section(heading) = {
@@ -43,7 +43,7 @@ box(width: 100%)[
     columns: (1fr, auto),
     rows: (auto, auto),
     row-gutter: 10pt,
-    text(size: 14pt)[#right],
+    text(size: 13pt)[#right],
     text()[#left],
     grid.cell(
       colspan: 2,
@@ -56,7 +56,7 @@ box(width: 100%)[
 /// helper function
 
 #let url(domain, body) = {
-  text(fill: blue)[
+  text(fill: rgb("#123293"))[
     #link(domain)[#body]
   ]
 }
@@ -69,31 +69,31 @@ box(width: 100%)[
   ] \
 ]
 #align(center)[
-    #text(size: 13pt, fill: blue)[
+    #text(size: 13pt, fill: rgb("#123293"))[
       #header_url(
         "https://github.com/bwaklog", 
         "icons/github.svg", 
         "github"
-      ) #h(5pt)
-      #text(fill: black)[$bar$] #h(5pt)
+      ) #h(2pt)
+      #text(fill: black)[$bar$] #h(2pt)
       #header_url(
         "https://www.linkedin.com/in/adityamhegde/", 
         "icons/linkedin.svg", 
         "linkedin"
-      ) #h(5pt)
-      #text(fill: black)[$bar$] #h(5pt)
+      ) #h(2pt)
+      #text(fill: black)[$bar$] #h(2pt)
       #header_url(
         "https://adiheg.netlify.app", 
         "icons/globe.svg", 
         "website"
-      ) #h(10pt)
-      #text(fill: black)[$bar$] #h(5pt)
+      ) #h(2pt)
+      #text(fill: black)[$bar$] #h(2pt)
       #header_url(
         "mailto:adityahegde.clg@gmail.com", 
         "icons/mail.svg", 
         "adityahegde.clg@gmail.com"
-      ) #h(5pt)
-      #text(fill: black)[$bar$] #h(5pt)
+      ) #h(2pt)
+      #text(fill: black)[$bar$] #h(2pt)
       #header_url(
         "+91 9741513349", 
         "icons/phone.svg", 
@@ -180,8 +180,8 @@ Worked on building the framework for a abstracted orchestrator service for Proxm
   text()[Sep 2023 - May 2025]
 )[
   #list(
-    [Presented projects in talks and was part of the mentor panel for #text(fill: blue)[#link("https://www.linkedin.com/events/7210204084853723137/comments/")[Tilde 3.0]]],
-    [Part of the team to build (#text(fill: blue)[#link("https://github.com/homebrew-ec-foss/eventloop")[event loop]]) for handling event checkpoints]
+    [Presented projects in talks and was part of the mentor panel for #text(fill: rgb("#123293"))[#link("https://www.linkedin.com/events/7210204084853723137/comments/")[Tilde 3.0]]],
+    [Part of the team to build (#text(fill: rgb("#123293"))[#link("https://github.com/homebrew-ec-foss/eventloop")[event loop]]) for handling event checkpoints]
   )
 ]
 
@@ -194,7 +194,7 @@ Worked on building the framework for a abstracted orchestrator service for Proxm
 )[
   #list(
     [Completed the 6 week industrial experience program - AIEP],
-    [Worked on the core functionality of the backend(#text(fill: blue)[#link("https://github.com/acmpesuecc/bunsamosa-bot")[bunsamosa-bot]])]
+    [Worked on the core functionality of the backend(#text(fill: rgb("#123293"))[#link("https://github.com/acmpesuecc/bunsamosa-bot")[bunsamosa-bot]])]
   )
 ]
 
